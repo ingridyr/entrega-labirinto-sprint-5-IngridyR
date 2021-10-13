@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 body {
     background-color: black;
 }
 
 h1 {
-    color: white;
+    color: rgb(12, 67, 184);
+    text-shadow: 0 0 10px #2925ff, 25px 12px 0px rgba(206,206,206,0);
     text-align: center;
-    font-family: 'lato', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+
+p {
+    color: yellow;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 div.wall {
@@ -23,8 +34,8 @@ div.space {
 
 div.F {
     width: 30px;
-    height: 3;
-    background-color: rgb(31, 207, 69);
+    height: 30px;
+    background-color: rgb(3, 11, 56);
 }
 
 div.S {
@@ -43,12 +54,30 @@ section#container {
     margin: 0 auto;
 }
 
-#player{
-    position: relative;
+#player {
+    position: relative;    
 }
 
-#player img{
+
+#player img {
     width: 23px;
-    height: 25px;
-    
+    height: 25px;   
+}
+
+#popUp {
+    position: absolute;
+    width: 150px;
+    height: 90px;
+    background-color: rgba(0, 68, 255, 0.541);
+    border: 2px solid yellow;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Space Mono', monospace;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    top: 300px;
+    box-shadow: -1px 0px 22px 10px rgba(255, 235, 50, 1);
 }

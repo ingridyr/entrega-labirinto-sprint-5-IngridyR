@@ -93,9 +93,18 @@ function criaPlayer() {
 }
 criaPlayer()
 
+/* ---------------------------------------------- */
+function popUp() {
+    const popUp     = document.createElement('div')
+    popUp.id        = "popUp"
+    popUp.innerText = "Parabéns, você conseguiu!"
+
+    container.appendChild(popUp)
+}
+
 const jogador = [9,0] //o mesmo que x,y
 
-let boxTop = 0
+let boxTop  = 0
 let boxLeft = 0
 
 document.addEventListener('keydown', (event) => {
@@ -127,7 +136,7 @@ document.addEventListener('keydown', (event) => {
         if(map[jogador[0]][jogador[1]+1] === 'F'){
             jogador[1] +=1
             boxLeft += 30
-            alert('voce ganhou!')
+            popUp()
         }
     }
 
@@ -141,4 +150,5 @@ document.addEventListener('keydown', (event) => {
     
   document.getElementById("player").style.top  = boxTop + "px";
   document.getElementById("player").style.left = boxLeft + "px";
+
 });
