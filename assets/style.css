@@ -44,7 +44,7 @@ section#container {
 }
 
 #player{
-    position: absolute;
+    position: relative;
 }
 
 #player img{
